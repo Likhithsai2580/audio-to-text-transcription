@@ -23,7 +23,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 ## Key Features
 
 - **User-friendly:** Designed for ease of use, the script prompts users to enter a YouTube video URL, minimizing the need for complicated setup processes.
-- **Efficient Audio Extraction:** The script utilizes the `pytube` library to effectively filter and download the audio stream from the specified YouTube video.
+- **Efficient Audio Extraction:** The script utilizes the `pytubefix` library to effectively filter and download the audio stream from the specified YouTube video.
 - **High-Quality Transcription:** The `whisper` library, a powerful speech-to-text tool, is employed to accurately transcribe the downloaded audio into text.
 - **Convenient Output:** The transcription is saved as a text file in the same directory as the script, ensuring easy access and sharing capabilities.
 
@@ -34,7 +34,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 
 ## Required Libraries
 
-- `pytube`: A lightweight Python library that enables the downloading of YouTube videos and the extraction of audio streams.
+- `pytubefix`: A lightweight Python library that enables the downloading of YouTube videos and the extraction of audio streams.
 
 - `whisper`: An advanced speech-to-text library that facilitates accurate and efficient transcription of audio files.
 - `langdetect`: A language detection library ported from Google's language-detection.
@@ -45,7 +45,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 2. Install the required libraries:
 
    ```bash
-   pip install pytube
+   pip install pytubefix
    ```
 
    ```bash
@@ -83,7 +83,7 @@ This script is designed to facilitate the transcription of YouTube videos into t
 ## Workflow
 
 1. The user inputs a YouTube video URL when prompted.
-2. The `pytube` library is used to create a `YouTube` object and filter the audio stream.
+2. The `pytubefix` library is used to create a `YouTube` object and filter the audio stream.
 3. The audio stream is downloaded as an MP3 file and saved in the `YoutubeAudios` folder.
 4. The `whisper` library loads a base model and transcribes the downloaded audio into text.
 5. The `langdetect` library detects the language of the transcribed text.
